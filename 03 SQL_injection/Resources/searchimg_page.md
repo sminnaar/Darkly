@@ -43,6 +43,8 @@ With these instructions getting the flag was easy.
 
 When an application is vulnerable to SQL injection and the results of the query are returned within the application's responses, the UNION keyword can be used to retrieve data from other tables within the database. This results in an SQL injection UNION attack.
 
+The UNION keyword lets you execute one or more additional SELECT queries and append the results to the original query.
+
 ## How to protect against
 
 * Use prepared statements or strerilize the input from the form.
