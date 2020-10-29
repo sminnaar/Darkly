@@ -15,7 +15,7 @@ You will see 2 directories hidden from crawlers, "./hidden" and "/whatever".
 
 Then modify the url to to below and click on the "htpasswd" link. This will download the file.
 ```bash
-10.203.68.35/whatever/
+10.203.68.35/whatever
 ```
 Contained in this file is:
 ```bash
