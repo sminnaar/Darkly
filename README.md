@@ -1,11 +1,35 @@
 # Darkly
 42 school web security project
 
+## Setup
+
+Using the Darky project image you need to start up a VM. I used [VirtualBox](https://www.virtualbox.org/) using setting for a 64bit Ubuntu system.  
+
+Start the VM and select "boot the Live System" when prompted or wait for the timer to expire.
+
+You should see this:
+```bash
+        ____                _______    _____           
+       |  _ \              |__   __|  / ____|          
+       | |_) | ___  _ __ _ __ | | ___| (___   ___  ___ 
+       |  _ < / _ \| '__| '_ \| |/ _ \\___ \ / _ \/ __|
+       | |_) | (_) | |  | | | | | (_) |___) |  __/ (__ 
+       |____/ \___/|_|  |_| |_|_|\___/_____/ \___|\___|
+
+                           WEB SECTION
+                       Good luck & Have fun
+ 
+ To start the challenges, open your web browser (:80) and go to:
+                          192.168.43.156
+```
+
+The IP might be diffrent depending on availibility and your system configuration.  
+
 ## First steps
 
 Starting a security audit can be a daunting task when you first start out. There are a lot of tools you can use that identify and exploit the vulnrebility's of web aplications.
 
-For this project we are working with a few restrictions nl: We are not allowed to use tools that make exploitation trivial.
+For this project we are working with a few restrictions nl, We are not allowed to use tools that make exploitation trivial.
 
 I chose nmap as a starting point to learn more about the site and point me in the right direction.
 
