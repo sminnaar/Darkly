@@ -2,7 +2,7 @@
 
 ## Found on:
 ```
-<ip>/?page=feedback
+<ip>/?page=upload
 ```
 
 ## How to exploit:
@@ -11,10 +11,13 @@ The nmap tool informed of a possible Cross Site Request Forgeries (CSRF) vulnrib
 
 What we found was a Cross Site Scripting Vunribility.
 
-When you enter a js fuction like "alert" in the name field of this page it runs that function on the server side.
+There is a hidden input whose value is the max file size that you can upload. This should be stored on the backend. The Form uses POST and accepts multipart/form-data types.
 
+This is insecure as I can upload any file to this site.
+
+### Run this command, replacing the 0.0.0.0 with the webapp IP.
 ```bash
-alert
+curl -X POST -H 'Content-Type: multipart/form-data' -F 'Upload=send' -F 'uploaded=@XSS.js;type=image/jpeg' "http://0.0.0.0/?page=upload#" | grep flag
 ```
 
 ## A brief explination of Cross Site Scripting:
@@ -31,16 +34,7 @@ To remedy XSS vulnerabilities, it is important to never use untrusted or unfilte
 
 Untrusted data can originate not only form the client but potentially a third party or previously uploaded file etc.
 
-Filtering of untrusted data typically involves converting special characters to their HTML entity encoded counterparts (however, other methods do exist, see references). These special characters include ( &, <, ", ', / )
-
-Although it is possible to filter untrusted input, there are five locations within an HTML page where untrusted input (even if it has been filtered) should never be placed:
-
-* Directly in a script.
-* Inside an HTML comment.
-* In an attribute name.
-* In a tag name.
-* Directly in CSS.
-* Each of these locations have their own form of escaping and filtering.
+Always use strict types when uploading files & check file type on the front- and backend.
 
 ## Resources:
 * <https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html>
