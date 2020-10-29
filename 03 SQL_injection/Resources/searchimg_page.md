@@ -7,6 +7,10 @@
 
 ## How to exploit
 
+The nmap tool informed of a possible Cross Site Request Forgeries (CSRF) vulnribility on this page.
+
+What we found was an SQL Injection vulnribility.
+
 Typing anything other than an id (integer) returns an SQL error. This gives an indication that the input is not sterilized before running a query.
 
 This is very dangerous as attackers notice these things and mark inputs and fields like these as targets.  

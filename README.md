@@ -59,7 +59,11 @@ PORT     STATE SERVICE VERSION
 |     Path: http://10.0.0.147:80/?page=searchimg
 |     Form id: 
 |     Form action: #
-|     
+|
+|     Path: http://10.203.68.35:80/?page=member
+|     Form id: 
+|     Form action: #
+|
 |     Path: http://10.0.0.147:80/?page=survey
 |     Form id: 
 |     Form action: #
@@ -79,9 +83,10 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 These results show 3 things:
 * Port 80:
-    * 3 pages have CSRF vulnrability's:
+    * 4 pages have possible CSRF vulnrability's:
         * /searchimg
         * /survey
+        * /member
         * /upload
     * There are 3 pages we can navigate to manually:
         * /admin
