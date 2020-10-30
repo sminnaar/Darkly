@@ -11,11 +11,17 @@ The nmap tool informed of a possible Cross Site Request Forgeries (CSRF) vulnrib
 
 What we found was a Cross Site Scripting Vunribility.
 
-When you enter a js fuction like "alert" in the name field of this page it runs that function on the server side.
+When you enter a js fuction like "alert" in the name field of this page it runs that function on the server side. This give an attacker the ability to run all kinds of functions on the server.
 
 ```bash
 alert
 ```
+or
+```bash
+script
+```
+
+The flag is produced when a script or function is run on the server.
 
 ## A brief explination of Cross Site Scripting:
 

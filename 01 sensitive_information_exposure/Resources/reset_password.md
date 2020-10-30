@@ -6,9 +6,9 @@
 <ip>/?page=recover
 ```
 
-## How
+## How to exploit
 
-Inspecting the recover password page reveals a hidden input field. Making it visible shows the devolopers email. Typing in anything and submitting gives you the flag.
+Inspecting the recover password page reveals a hidden input field. Making it visible shows the devolopers email. Typing in anything and submitting the form gives you the flag.
 
 ## How to protect against
 

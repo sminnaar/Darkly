@@ -8,26 +8,26 @@ Along with these is a file called robots.txt
 
 Navigate to this page:
 ```bash
-10.203.68.35/robots.txt
+<ip>/robots.txt
 ```
 
 You will see 2 directories hidden from crawlers, "./hidden" and "/whatever".
 
-Then modify the url to to below and click on the "htpasswd" link. This will download the file.
+Modify the url to what is shown below and click on the "htpasswd" link. This will download the file.
 ```bash
-10.203.68.35/whatever
+<ip>/whatever
 ```
 Contained in this file is:
 ```bash
 root:8621ffdbc5698829397d97767ac13db3
 ```
-This syntax is how linux systems store usernames and passwords. This is what the content of the file would have been in the Path Traversal vulnribility.
+This syntax is how linux systems store usernames and passwords. This is what the content of the file would have been in the Path Traversal vulnribility (Nr. 10).
 
 [MD5 decryption utility](https://hashtoolkit.com/decrypt-md5-hash)
 
 Hash cracking the password give us the string "dragon".
 
-navigating to the /admin page we see a login form. Using the credentials we just obtained we log in and get the flag.
+Navigating to the /admin page we see a login form. Using the credentials we just obtained we log in and get the flag.
 
 ## A brief explination of Robots.txt:
 

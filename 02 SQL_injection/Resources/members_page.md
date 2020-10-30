@@ -42,7 +42,7 @@ With these instructions getting the flag was easy.
 
 ## A brief explination of the SQL Injection
 
-Typing any text into the input field returns this error:
+Typing "sminnaar" into the input field and submitting returns this error:
 ```bash
 Unknown column 'sminnaar' in 'where clause'
 ```

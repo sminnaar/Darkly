@@ -6,7 +6,7 @@ This gives an indication that the routing is not secure. Could I get access to t
 
 Trying to do path traversal by appending "../" to the home page does not work.
 
-What about appending it to "http://10.203.68.35/?page=" ?
+What about appending it to "(host IP)/?page=" ?
 
 ## How to exploit:
 

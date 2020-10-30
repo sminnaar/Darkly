@@ -1,5 +1,9 @@
 # Unvalidated Select
 
+Inspecting the page shows interesting logic running in the HTML. Is there something here that I can use or modify to get access to things I should not be able to?
+
+All the tables have set values between 1 and 10 inclusive. What if I try to get the data of a value that is out of the range of the data in the database?
+
 ## Where
 
 ```bash
@@ -13,8 +17,6 @@ Inspect the table to see a form for each row. For the first row, change the valu
 Now in the first row of the page select 2 in the drop down field.
 
 This causes the form to look up a value in the database that does not exist and causes a backend error producing the flag.
-
-### Explaining the flags:
 
 ## A brief explination:
 

@@ -1,6 +1,7 @@
 # Spoofing
 
 ## How to exploit:
+
 On the hom page, scroll all the way down and click on:
 ```bash
 © BornToSec
@@ -40,6 +41,8 @@ Running the above command gives us this output:
 ```bash
 <center><h2 style="margin-top:50px;"> The flag is : f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188</h2><br/><img src="images/win.png" alt="" width=200px height=200px></center> <audio id="best_music_ever" src="audio/music.mp3"preload="true" loop="loop" autoplay="autoplay">
 ```
+
+In the case of rea-world applications an attacker would be looking for personal data, keys, usernames and passwords. Anything that they can possibly use to escalate their privileges or data they can use for monatary gains or social hacking.
 
 ## A brief explination of Spoofing:
 

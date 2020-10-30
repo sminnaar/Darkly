@@ -20,13 +20,15 @@ This is insecure as I can upload any file to this site.
 curl -X POST -H 'Content-Type: multipart/form-data' -F 'Upload=send' -F 'uploaded=@XSS.js;type=image/jpeg' "http://0.0.0.0/?page=upload#" | grep flag
 ```
 
+This request returns the flag and a message that XSS.js was successfully uploaded.
+
 ## A brief explination of Cross Site Scripting:
 
 Cross Site Scripting (XSS) allows clients to inject scripts into a request and have the server return the script to the client in the response. This occurs because the application is taking untrusted data (in this example, from the client) and reusing it without performing any validation or sanitisation.
 
 If the injected script is returned immediately this is known as reflected XSS. If the injected script is stored by the server and returned to any client visiting the affected page, then this is known as persistent XSS (also stored XSS).
 
-In this instance it is possible to insert a fuction directly into HTML element content.
+In this instance it is Persistant or Stored XSS.
 
 ## How to protect against:
 

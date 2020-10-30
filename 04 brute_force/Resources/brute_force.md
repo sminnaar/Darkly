@@ -15,7 +15,7 @@ It tests all the passwords in the passwords.txt file and "admin" as the username
 The flag is returned in the response from the server, it will be printed in the terminal along with the password that produced the flag.
 
 ```bash
-<center><h2 style="margin-top:50px;">The flag is : b3a6e43ddf8b4bbb4125e5e7d23040433827759d4de1c04ea63907479a80a6b2 </h2><br/><img src="images/win.png" alt="" width=200px height=200px></center>                         </div>
+<center><h2 style="margin-top:50px;">The flag is : b3a6e43ddf8b4bbb4125e5e7d23040433827759d4de1c04ea63907479a80a6b2 </h2><br/><img src="images/win.png" alt="" width=200px height=200px></center>
 Tested:shadow
 ```
 
